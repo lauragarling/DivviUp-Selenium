@@ -26,7 +26,7 @@ public class Logins {
 		driver.findElement(By.id("exampleInputEmail1")).sendKeys("garling@wisc.edu");
 		driver.findElement(By.id("exampleInputPassword1")).sendKeys("owen");
 		driver.findElement(By.name("submit")).click();
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		
 		String ActualURL = driver.getCurrentUrl();
 		String ExpectedURL = "http://localhost:3000/home";

@@ -26,9 +26,11 @@ public class Create {
 		driver.findElement(By.id("exampleInputLast")).sendKeys("Wolf");
 		driver.findElement(By.id("exampleInputPassword1")).sendKeys("caprisun");
 		driver.findElement(By.id("exampleInputConfirmPassword1")).sendKeys("caprisun");
+		
+		Thread.sleep(2000);
 
 		driver.findElement(By.name("sub")).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		String ActualURL = driver.getCurrentUrl();
 		String ExpectedURL = "http://localhost:3000/confirm";
@@ -75,7 +77,7 @@ public class Create {
 		Thread.sleep(2000);
 		driver.findElement(By.name("create")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("exampleInputEmail1")).sendKeys("owolman@wisc.edu");
+		driver.findElement(By.id("exampleInputEmail1")).sendKeys("wolman@wisc.edu");
 		driver.findElement(By.id("exampleInputFirst")).sendKeys("Owey");
 		driver.findElement(By.id("exampleInputLast")).sendKeys("Wolf");
 		driver.findElement(By.id("exampleInputPassword1")).sendKeys("caprisun");

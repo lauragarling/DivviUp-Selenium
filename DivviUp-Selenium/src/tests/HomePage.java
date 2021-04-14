@@ -59,15 +59,16 @@ public class HomePage {
 		
 		Thread.sleep(3000);
 		driver.findElement(By.name("create")).click();
-		//driver.switchTo().activeElement();
+		Thread.sleep(2000);		
 		driver.findElement(By.name("box1")).click();
 		driver.findElement(By.name("box1")).sendKeys("Preparing for Botanic Panic");
 		driver.findElement(By.name("create2")).click();
 		
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		
 		if (!driver.getCurrentUrl().contains("http://localhost:3000/billroompayer/")) {
 			System.out.println("FAIL: New room not generated.");
+			return;
 		}
 		
 		System.out.println("Test 2 of 5: PASSED");
@@ -90,6 +91,7 @@ public class HomePage {
 		
 		Thread.sleep(2000);
 		driver.findElement(By.name("join")).click();
+		Thread.sleep(2000);
 		driver.findElement(By.name("box1")).click();
 		driver.findElement(By.name("box1")).sendKeys("45000");
 		driver.findElement(By.name("join2")).click();
